@@ -97,14 +97,14 @@ def Delete_Duplicate(dict1 , Email):
 
     server = smtplib.SMTP('smtp.gmail.com')
     server.starttls()
-    server.login('rautabhishek4884@gmail.com' , 'elnghmmqabcsvhoe')
+    server.login('Sender mail' , 'Password')
     text = msg.as_string()
     server.sendmail('rautabhishek4884@gmail.com',Email,text)
     server.quit()
     print("Mail send sucessfully-------------")
+
+    
 def main():
-
-
     try:
         IP1 = 'A'
         IP2 = 'rautabhishek4884@gmail.com'
