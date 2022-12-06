@@ -82,7 +82,7 @@ def Send_Mail(Log_Path ,Email):
     msg = MIMEMultipart()
     msg['from'] = 'rautabhishek4884@gmail.com'
     msg['to'] = Email
-    msg['subject'] = 'Project on Directory Watcher 595ML_Abhishek'
+    msg['subject'] = 'Project on Directory Watcher by Abhishek Raut'
     body = '''The Mail contains one attachment in that file 
             and that file contains all the names of duplicates files 
             which are deleted   
@@ -100,7 +100,7 @@ def Send_Mail(Log_Path ,Email):
 
     server = smtplib.SMTP('smtp.gmail.com')
     server.starttls()
-    server.login('rautabhishek4884@gmail.com' , 'elnghmmqabcsvhoe')
+    server.login('Sender mail' , 'Password')
     text = msg.as_string()
     server.sendmail('rautabhishek4884@gmail.com',Email,text)
     server.quit()
