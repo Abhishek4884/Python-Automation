@@ -21,7 +21,7 @@ msg.attach(part)
 
 server = smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
-server.login('rautabhishek4884@gmail.com' , 'elnghmmqabcsvhoe')
+server.login('Sender mail' , 'Password')
 text = msg.as_string()
 server.sendmail('rautabhishek4884@gmail.com' , 'rautabhishek4884@gmail.com' ,text)
 server.quit()
