@@ -63,7 +63,7 @@ def ProcessDisplay(log_dir , Email):
     server = smtplib.SMTP('smtp.gmail.com',587)
     server.starttls()
     
-    server.login('rautabhishek4884@gmail.com' , 'elnghmmqabcsvhoe')
+    server.login('Sender mail' , 'Password')
     text = msg.as_string()
     server.sendmail('rautabhishek4884@gmail.com' , TO ,text)
     server.quit()
